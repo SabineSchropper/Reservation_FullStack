@@ -1,0 +1,35 @@
+body{
+    margin-left: 20px;
+}
+#reserve{
+    margin: 20px;
+} 
+
+.box{
+    width: 400px;
+    height: 150px;
+}
+input{
+    float: right;
+    width: 230px;
+}
+label{
+    float: left;
+}
+#list{
+    list-style: none;
+}
+#cancelButton, #changeButton, button{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#new{
+    width: 400px;
+    height: 150px;
+}
+#changeNumber{
+    float: right;
+}
+#showButton{
+    margin-bottom: 20px;
+}

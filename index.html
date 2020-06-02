@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <link href = "index.css" rel = "stylesheet"> 
+    <meta charset = "utf-8"/>
+    <title>Reservation</title>
+    <script src = "reservation.js"></script>
+</head>
+<body>
+    <h1>Tischreservierung</h1>
+    <div class="box">
+        <label for="password">Passwort:</label>
+        <input id="password" type="password">
+        <br><br>
+        <label for="mail">E-Mail:</label>
+        <input id="mail" type="text">
+        <br><br>
+        <label for="amountPersons">Anzahl Personen:</label>
+        <input id="amountPersons" min = 1 type="number">
+        <br><br>
+        <div >
+            <select id="restaurant" name="Restaurant">
+              <option value="1">Gasthaus Hirschen</option>
+              <option value="2">Pizzeria Antica</option>
+              <option value="3">Gasthaus Harmonie</option>
+            </select>
+          </div>
+    </div>
+    <div>
+        <button id="reserve" onclick="reserve()">reservieren</button>
+    </div>
+    <div>
+        <h2>Reservierungen</h2>
+        <div>
+            <ol id = "list">
+                <li></li>
+            </ol>
+        </div>
+    </div>
+    <div>
+        <h2>Reservierungen ansehen oder stornieren</h2>
+    </div>
+    <div class="box">
+        <div>
+            <button id="showButton" onclick="showReservations()">ansehen</button>
+        </div>
+        <div>
+            <label for="number">Reservierungsnummer:</label>
+            <input id="number" min = 1 type="number">
+            <br>
+            <button id="cancelButton" onclick="cancel()">stornieren</button>
+            <button id="changeButton" onclick="change()">ändern</button>
+        </div>
+        <div>
+            <p id="new"></p>
+        </div>
+    </div>
+
+</body>
